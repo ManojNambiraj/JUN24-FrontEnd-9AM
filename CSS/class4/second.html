@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* pseudo class */
+
+      .main {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        /* border-radius: 50%; */
+        transition: 2s;
+        opacity: 0.1;
+
+        transform: rotate(80deg);
+      }
+
+      .main:hover {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        transition: 2s;
+        border-radius: 50%;
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+
+      a {
+        font-size: 3em;
+        text-decoration: none;
+      }
+
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: pink;
+      }
+
+      a:active {
+        color: darkmagenta;
+      }
+
+      .head1 {
+        display: inline;
+      }
+
+      .head2 {
+        display: inline;
+      }
+
+      .span1 {
+        display: block;
+      }
+
+      .two{
+        
+      }
+
+/* Anchester combinator */
+
+      ul > .two{
+        color: red;
+        font-size: larger;
+      }
+
+      .para1 ~ p{
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main"></div>
+
+    <a href="index.html">Next</a>
+
+    <div>
+      <h1 class="head1">heading</h1>
+
+      <h1 class="head2">header</h1>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+        nesciunt veritatis maiores veniam minima suscipit illo odit facilis
+        quis? Perferendis alias accusantium blanditiis reprehenderit ex
+        reiciendis voluptatum voluptas eum quae!
+      </p>
+
+      <span class="span1">hello</span>
+
+      <span>hi</span>
+
+      <hr />
+
+      <ul>
+        <li>One</li>
+        <li class="two">Two</li>
+        <li>Three
+
+            <ul>
+                <li>sport</li>
+                <li class="two">Music</li>
+                <li>Photos</li>
+            </ul>
+        </li>
+        </li>
+        <li>Four</li>
+        <li>Five</li>
+      </ul>
+
+      <ol>
+        <li>One</li>
+        <li class="two">Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+      </ol>
+
+      <div>
+        <p class="para1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sapiente quis necessitatibus alias expedita in architecto. Eveniet
+          voluptatem eligendi, officiis ea dicta quas iure corrupti? Provident
+          maxime praesentium earum iusto?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sapiente quis necessitatibus alias expedita in architecto. Eveniet
+          voluptatem eligendi, officiis ea dicta quas iure corrupti? Provident
+          maxime praesentium earum iusto?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sapiente quis necessitatibus alias expedita in architecto. Eveniet
+          voluptatem eligendi, officiis ea dicta quas iure corrupti? Provident
+          maxime praesentium earum iusto?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sapiente quis necessitatibus alias expedita in architecto. Eveniet
+          voluptatem eligendi, officiis ea dicta quas iure corrupti? Provident
+          maxime praesentium earum iusto?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sapiente quis necessitatibus alias expedita in architecto. Eveniet
+          voluptatem eligendi, officiis ea dicta quas iure corrupti? Provident
+          maxime praesentium earum iusto?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sapiente quis necessitatibus alias expedita in architecto. Eveniet
+          voluptatem eligendi, officiis ea dicta quas iure corrupti? Provident
+          maxime praesentium earum iusto?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sapiente quis necessitatibus alias expedita in architecto. Eveniet
+          voluptatem eligendi, officiis ea dicta quas iure corrupti? Provident
+          maxime praesentium earum iusto?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

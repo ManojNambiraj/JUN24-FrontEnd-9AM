@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .para {
+        color: blue;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+
+        text-align: center;
+        text-transform: capitalize;
+        text-wrap: wrap;
+      }
+
+      .highlight {
+        color: brown;
+        text-decoration: underline;
+      }
+
+      .imgParent {
+
+        border: 1px solid black;
+
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+       
+      }
+
+      .img1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="para">
+      Lorem ipsum dolor,<br />
+      sit amet <span class="highlight">consectetur</span> adipisicing elit.
+      Quia, quis deleniti! Eveniet nobis vel molestias? Suscipit beatae ullam
+      eveniet quisquam voluptas id voluptatibus ab iste, assumenda quaerat quae
+      cumque! Adipisci?
+    </p>
+
+    <div class="imgParent">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg"
+        alt="nature"
+        class="img1"
+      />
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
+
+<!-- 
+ 
+Units:
+
+1. px
+2. pt
+3. %
+4. em -> emphasis (1em = 16px)
+5. rem
+6. vw -> viewport width
+7. vh -> viewport height
+
+-->
+
+<!-- Name formats
+
+  1. maincontainer
+  2. main-container -> (snake-case)
+  3. main_container -> (snake_case)
+  4. mainContainerSecond -> (camelCase)
+  5. MainContainerSecond -> (PascalCase)
+
+-->

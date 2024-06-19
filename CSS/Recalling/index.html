@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .img1 {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: 90%;
+      }
+
+      body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqGaHvJi13Sr0AdXYB6_9RmGgqVQ8ev3L4w&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .para2 {
+        color: yellow;
+      }
+
+      .seven {
+        background-color: darkmagenta;
+        width: 150px;
+        height: 150px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        font-size: 4em;
+
+        border: 5px solid white;
+
+        border-radius: 50%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+
+      .parent {
+        list-style-type: none;
+      }
+
+      .parent > li {
+        width: 300px;
+        padding: 10px 20px;
+        background-color: grey;
+        border-radius: 20px;
+        color: white;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .outter_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><i class="fa-regular fa-futbol"></i> header</h1>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbnDJhA3zvtwnAu0EDX-etZFDYdDL1vIry_w&s"
+      alt="nature"
+      class="img1"
+    />
+
+    😍😍😍
+
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam
+      dignissimos deleniti vero blanditiis inventore quod ad quisquam impedit
+      explicabo qui voluptatem minima quia accusantium quas recusandae
+      temporibus, sapiente nostrum. 
+    </p>
+
+    <p class="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nesciunt
+      nulla aperiam molestias beatae quis quibusdam facilis officiis
+      voluptatibus. Error quis deleniti dignissimos amet eaque omnis quisquam ab
+      qui voluptatum!
+    </p>
+
+   <div class="outter_card">
+    <div class="seven left">76</div>
+
+    <div class="right">
+      <ul class="parent">
+        <li><span>React</span> <span>80/100</span></li>
+        <li><span>Vue</span> <span>70/100</span></li>
+        <li><span>Node</span> <span> 30/70</span></li>
+        <li><span>Css</span> <span>20/50</span></li>
+        <li><span>HTMl</span> <span>---0</span></li>
+      </ul>
+    </div>
+   </div>
+  </body>
+</html>
