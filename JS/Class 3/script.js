@@ -16,8 +16,6 @@ let fruits = [2, 5, 10, 20, 50, 71, 99, 101];
 
 // console.log(result);
 
-
-
 // Filter
 
 // const result = fruits.filter((item) => (item % 2 != 0))
@@ -29,7 +27,6 @@ let fruits = [2, 5, 10, 20, 50, 71, 99, 101];
 // const result = fruits.reduce((prev, curr) => (curr + prev))
 
 // console.log(result);
-
 
 // ForEach
 
@@ -70,28 +67,62 @@ let fruits = [2, 5, 10, 20, 50, 71, 99, 101];
 
 // Call
 
-const person = {
-    fullName: function () {
-        return this.firstName + " " + this.lastname
-    }
-}
+// const person = {
+//     fullName: function () {
+//         return this.firstName + " " + this.lastname
+//     }
+// }
 
-const person1 = {
-    firstName: "John",
-    lastname: "weeker"
-}
+// const person1 = {
+//     firstName: "John",
+//     lastname: "weeker"
+// }
 
-const person2 = {
-    firstName: "Raj",
-    lastname: "kumar"
-}
+// const person2 = {
+//     firstName: "Raj",
+//     lastname: "kumar"
+// }
 
-let ans = person.fullName.call(person2)
+// let ans = person.fullName.call(person2)
 
 // console.log(ans);
 
-// // for loop
+// Apply:
 
-// for(let i = 0; i <= 5; i++){
-//     console.log(i);
+// const person = {
+//     fullName: function (country, State) {
+//         return this.firstName + " " + this.lastname + "," + country + "," + State
+//     }
 // }
+
+// const person2 = {
+//     firstName: "Raj",
+//     lastname: "kumar"
+// }
+
+// let ans = person.fullName.apply(person2, ["India", "TN"])
+
+// console.log(ans);
+
+// Bind:
+
+// const person = {
+//     firstName: "Raj",
+//     lastname: "kumar",
+//     fullName: function () {
+//         console.log(this.firstName + " " + this.lastname);
+//     }
+// }
+
+// let ans = person.fullName.bind(person)
+
+// setTimeout(ans, 2000);
+
+// setTimeout(() => {
+//   console.log("hi");
+// }, 5000);
+
+
+// setInterval(()=>{
+//     console.log("hello");
+// }, 2000)
